@@ -1,89 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesiMeat - Coming Soon</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DesiMeat – Platform Update</title>
 
-        body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #6a11cb, #2575fc);
-            color: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            padding: 20px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #5e1a8a, #7b2cbf);
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 20px;
+    text-align: center;
+}
 
-        p {
-            font-size: 1.2rem;
-            margin: 10px 0;
-            line-height: 1.6;
-        }
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
 
-        a {
-            color: #ffd700;
-            text-decoration: none;
-            font-weight: bold;
-        }
+h1 {
+    color: #ffb703;
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+p {
+    font-size: 1.1rem;
+    margin: 12px 0;
+    line-height: 1.6;
+}
 
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            font-size: 0.9rem;
-            color: #ddd;
-        }
+a {
+    color: #ffb703;
+    font-weight: 600;
+    text-decoration: none;
+}
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
+a:hover {
+    text-decoration: underline;
+}
 
-            p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+.divider {
+    margin: 30px auto;
+    width: 85%;
+    height: 1px;
+    background: rgba(255,255,255,0.25);
+}
+
+/* PRICE TABLE */
+.price-table {
+    margin-top: 35px;
+    background: linear-gradient(180deg, #3b0a6d, #4b128c);
+    border-radius: 14px;
+    padding: 18px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+thead th {
+    background: #5a189a;
+    color: #ffb703;
+    font-weight: 700;
+    padding: 12px;
+    text-align: left;
+}
+
+tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+    font-size: 0.95rem;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.product {
+    font-weight: 600;
+}
+
+.note {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.footer {
+    margin-top: 35px;
+    font-size: 1rem;
+}
+
+/* MOBILE */
+@media(max-width:600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>DesiMeat Website is Currently Under Development</h1>
+<div class="container">
 
-    <p>We are updating our platform with new categories and an improved experience.</p>
+<h1>We are updating our platform with new categories<br>and an enhanced user experience.</h1>
 
-    <p>📞 To place an order, call or WhatsApp us at:  
-        <a href="tel:+918355858183">83558 58183</a>
-    </p>
+<p>📱 Android users can download the DesiMeat app from Google Play Store:
+<br>
+<a href="https://play.google.com/store/apps/details?id=com.adysun.desimeat" target="_blank">
+Download App
+</a>
+</p>
 
-    <p>📱 Android users can download our DesiMeat app from Google Play Store:  
-        <a href="https://play.google.com" target="_blank">Download App</a>
-    </p>
+<p>🍎 iOS version is currently under development. Customers can place orders via call or WhatsApp.</p>
 
-    <p>🍎 iOS users can currently order through call/WhatsApp using the number above,  
-        as our iOS version is under development.
-    </p>
+<p>📞 To place an order, please call or WhatsApp us at:
+<br>
+<a href="tel:+918355858183">83558 58183</a> |
+<a href="https://wa.me/918355858183" target="_blank">WhatsApp</a>
+</p>
 
-    <p>🙏 Thank you for your patience and trust.</p>
+<div class="divider"></div>
 
-    <div class="footer">
-        © DesiMeat | All Rights Reserved
-    </div>
+<!-- PRICE TABLE -->
+<div class="price-table">
+<table>
+<thead>
+<tr>
+<th>Current Products</th>
+<th>250gm</th>
+<th>500gm</th>
+<th>750gm</th>
+<th>1kg</th>
+<th>Special</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="product">Mutton Biryani Cut</td>
+<td>-</td>
+<td>Rs. 500/-</td>
+<td>Rs. 700/-</td>
+<td>Rs. 900/-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td class="product">Mutton Boneless</td>
+<td>-</td>
+<td>Rs. 500/-</td>
+<td>Rs. 750/-</td>
+<td>Rs. 1000/-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td class="product">Goat Kapura</td>
+<td>Rs. 350/-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td class="product">Goat Liver</td>
+<td>Rs. 300/-</td>
+<td>Rs. 539/-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td class="product">Goat Kidney</td>
+<td>Rs. 350/-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td class="product">Goat Heart</td>
+<td>Rs. 300/-</td>
+<td>Rs. 539/-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+
+<tr>
+<td class="product">Goat Bheja</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>2 nos – Rs. 410 / 4 nos – Rs. 820</td>
+</tr>
+
+<tr>
+<td class="product">Mutton Paya</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>4 nos – Rs. 500 (Roasted)</td>
+</tr>
+
+<tr>
+<td class="product">Goat Mundi Full</td>
+<td>-</td>
+<td>-</td>
+<td>Rs. 850</td>
+<td>-</td>
+<td>(Roasted)</td>
+</tr>
+
+<tr>
+<td class="product">Mutton Raan</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Rs. 1400 (1.5kg)</td>
+</tr>
+
+<tr>
+<td class="product">Mutton Charbi</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>Rs. 300 (200gm)</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<div class="footer">
+🙏 Thank you for your patience and trust.
+</div>
+
+</div>
 </body>
 </html>
