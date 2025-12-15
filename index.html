@@ -85,12 +85,13 @@ tbody td {
     text-align: left;
 }
 
-tbody tr:last-child td {
-    border-bottom: none;
-}
-
 tbody td:first-child {
     font-weight: 600;
+}
+
+/* REMOVE BORDER FOR GROUPED ROWS */
+tr.no-border td {
+    border-bottom: none;
 }
 
 .footer {
@@ -148,8 +149,8 @@ Customers can place orders via call or WhatsApp.
 
 <tbody>
 
-<!-- FIRST 3 ITEMS – SAME PRICE PATTERN -->
-<tr>
+<!-- FIRST GROUP -->
+<tr class="no-border">
 <td>Mutton Curry Cut</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td></td>
 </tr>
@@ -163,13 +164,13 @@ Customers can place orders via call or WhatsApp.
 <td></td>
 </tr>
 
-<tr>
+<tr class="no-border">
 <td>Mutton Keema</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td></td>
 </tr>
 
-<!-- NEXT 3 ITEMS – SAME PRICE PATTERN -->
-<tr>
+<!-- SECOND GROUP -->
+<tr class="no-border">
 <td>Mutton Shoulder</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td></td>
 </tr>
@@ -183,11 +184,12 @@ Customers can place orders via call or WhatsApp.
 <td></td>
 </tr>
 
-<tr>
+<tr class="no-border">
 <td>Mutton Chops</td>
 <td>-</td><td>-</td><td>-</td><td>-</td><td></td>
 </tr>
 
+<!-- INDIVIDUAL ITEMS -->
 <tr>
 <td>Goat Kapura</td>
 <td>Rs. 350/-</td><td>-</td><td>-</td><td>-</td><td></td>
